@@ -1,14 +1,13 @@
-🌐 GeoTracker-Python
+# 🌐 GeoTracker-Python
 
 A Python-based consent-based geolocation awareness dashboard designed for authorized development, testing, and educational purposes.
 
-Developer: "negi748" (https://github.com/negi748)
-
-Repository: "GeoTracker-Python" (https://github.com/negi748/GeoTracker-Python)
+**Developer:** [negi748](https://github.com/negi748)  
+**Repository:** [GeoTracker-Python](https://github.com/negi748/GeoTracker-Python)
 
 ---
 
-✨ Features
+## ✨ Features
 
 - 🐍 Python-based web dashboard
 - 🌐 Browser-based interface
@@ -17,219 +16,242 @@ Repository: "GeoTracker-Python" (https://github.com/negi748/GeoTracker-Python)
 - ☁️ Automatic Cloudflare Tunnel integration
 - 🔗 Automatic temporary public HTTPS share link
 - 📱 Termux (Android) support
-- 🐉 Kali Linux support
-- 🖥️ Local dashboard
-- 🔒 Privacy-focused usage
+- 🐧 Kali Linux support
+- 💻 Local dashboard
+- 🔐 Privacy-focused usage
 - ⚡ Simple command-line startup
 
 ---
 
-📋 Requirements
+## 📋 Requirements
 
-Before running GeoTracker-Python, make sure your system has:
+Before running the project, make sure you have:
 
 - Python 3
 - Git
-- "cloudflared"
+- `cloudflared`
 - Modern web browser
 - Internet connection
 
-«"cloudflared" must be installed and available to the application for automatic public-link generation.»
+`cloudflared` must be installed and available to the application for automatic public-link generation.
 
 ---
 
-⚡ Quick Start
+# 🚀 Quick Start
 
-📱 Termux
+## 📱 Termux
 
-Copy the command below and paste it into Termux:
+Run the following command:
 
+```bash
 git clone https://github.com/negi748/GeoTracker-Python.git && cd GeoTracker-Python && (test -f requirements.txt && pip install -r requirements.txt || true) && python GPS.py
-
-Press Enter.
-
-The project will be cloned, dependencies will be installed if "requirements.txt" exists, and the application will start.
+```
 
 ---
 
-🐉 Kali Linux
+## 🐧 Kali Linux
 
-Copy the command below and paste it into Kali Linux:
+Run:
 
+```bash
 git clone https://github.com/negi748/GeoTracker-Python.git && cd GeoTracker-Python && (test -f requirements.txt && pip3 install -r requirements.txt || true) && python3 GPS.py
-
-Press Enter.
-
-The project will be cloned, dependencies will be installed if "requirements.txt" exists, and the application will start.
+```
 
 ---
 
-🔧 Manual Installation
+# 🛠️ Manual Installation
 
-If you prefer to install the project step by step, follow the instructions below.
+## 1. Clone Repository
 
-1. Clone the Repository
-
+```bash
 git clone https://github.com/negi748/GeoTracker-Python.git
+```
 
-2. Enter the Project Directory
+## 2. Enter Project Directory
 
+```bash
 cd GeoTracker-Python
+```
 
-3. Install Dependencies
+## 3. Install Requirements
 
-If the repository contains "requirements.txt":
+### Python / Termux
 
+```bash
 pip install -r requirements.txt
+```
 
-For systems using "pip3":
+### Kali Linux
 
+```bash
 pip3 install -r requirements.txt
+```
 
-4. Start the Application
+## 4. Start the Application
 
+### Python / Termux
+
+```bash
 python GPS.py
+```
 
-Or:
+### Kali Linux
 
+```bash
 python3 GPS.py
+```
 
 ---
 
-☁️ Automatic Cloudflare Tunnel
+# ☁️ Automatic Cloudflare Tunnel
 
 GeoTracker-Python can automatically use Cloudflare Tunnel to create a temporary public HTTPS URL.
 
-You do not need to manually run a Cloudflare tunnel command when the automatic tunnel feature is available.
+When the application starts, you may see something similar to:
 
-After starting the application, the terminal will display information similar to:
-
+```text
 [INFO] Generating public link via Cloudflare Tunnel...
-
 Press CTRL+C to stop...
 
-PUBLIC SHARE LINK: https://example-name.trycloudflare.com/share/...
-
-Copy the displayed PUBLIC SHARE LINK and open it in your browser.
-
----
-
-🔄 How It Works
-
-Run "GPS.py"
-↓
-Python Web Server
-↓
-Local Dashboard
-↓
-Cloudflare Tunnel
-↓
-Temporary HTTPS URL
-↓
-PUBLIC SHARE LINK
-
-The application starts the local server and then uses Cloudflare Tunnel to provide temporary public access when the tunnel component is available.
-
----
-
-🖥️ Local Dashboard
-
-The application runs a local web dashboard.
-
-Example:
-
-http://127.0.0.1:8765
-
-The exact port may vary depending on the application configuration.
-
-The application displays the actual local address when it starts.
-
----
-
-🔗 Public Share Link
-
-When Cloudflare Tunnel starts successfully, the terminal displays a temporary HTTPS URL similar to:
-
+PUBLIC SHARE LINK:
 https://example-name.trycloudflare.com/share/...
+```
 
-The public URL:
-
-- Is temporary
-- Can change after restarting the application
-- Works only while the application/tunnel is running
-- Should only be shared with authorized users
+No manual tunnel command is required when the automatic tunnel feature is available.
 
 ---
 
-📱 Termux Installation
+# 🔄 How It Works
 
-Update Packages
+**Run `GPS.py`**
 
+↓  
+
+**Python Web Server**
+
+↓  
+
+**Local Dashboard**
+
+↓  
+
+**Cloudflare Tunnel**
+
+↓  
+
+**Temporary HTTPS URL**
+
+↓  
+
+**PUBLIC SHARE LINK**
+
+---
+
+# 🌐 Dashboard
+
+The application may provide a local dashboard such as:
+
+```text
+http://127.0.0.1:8765
+```
+
+A temporary public share link may look like:
+
+```text
+https://example-name.trycloudflare.com/share/...
+```
+
+Only share the generated public URL with people who have explicitly agreed to participate.
+
+---
+
+# 📱 Termux Installation
+
+Update Termux packages:
+
+```bash
 pkg update
+```
 
-Install Python and Git
+Install Python and Git:
 
+```bash
 pkg install python git
+```
 
-Clone GeoTracker-Python
+Clone the repository:
 
+```bash
 git clone https://github.com/negi748/GeoTracker-Python.git
+```
 
-Enter the Directory
+Enter the project directory:
 
+```bash
 cd GeoTracker-Python
+```
 
-Install Python Dependencies
+Install Python dependencies:
 
-If "requirements.txt" exists:
-
+```bash
 pip install -r requirements.txt
+```
 
-Start the Tool
+Start the application:
 
+```bash
 python GPS.py
-
-If "cloudflared" is installed and available to the application, GeoTracker-Python will automatically attempt to generate the public share link.
+```
 
 ---
 
-🐉 Kali Linux Installation
+# 🐧 Kali Linux Installation
 
-Update Packages
+Update packages:
 
+```bash
 sudo apt update
+```
 
-Install Python and Git
+Install required packages:
 
+```bash
 sudo apt install python3 python3-pip git
+```
 
-Clone GeoTracker-Python
+Clone the repository:
 
+```bash
 git clone https://github.com/negi748/GeoTracker-Python.git
+```
 
-Enter the Directory
+Enter the project directory:
 
+```bash
 cd GeoTracker-Python
+```
 
-Install Dependencies
+Install dependencies:
 
+```bash
 pip3 install -r requirements.txt
+```
 
-Start the Tool
+Start the application:
 
+```bash
 python3 GPS.py
-
-The application will start the local dashboard and attempt to generate the temporary public Cloudflare URL automatically.
+```
 
 ---
 
-☁️ Cloudflare Requirements
+# ☁️ Cloudflare Requirements
 
-Check whether "cloudflared" is installed:
+Check whether `cloudflared` is installed:
 
+```bash
 cloudflared --version
-
-If the command works, the application can use the installed Cloudflare client for its automatic tunnel functionality.
+```
 
 Official Cloudflare documentation:
 
@@ -237,47 +259,44 @@ https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/do
 
 ---
 
-⚠️ Public Tunnel Warning
+# ⚠️ Public Tunnel Warning
 
-A Cloudflare Tunnel can make a locally running application accessible through the internet.
+A public Cloudflare Tunnel URL can make your local application temporarily accessible from the internet.
 
-Therefore:
+Use it responsibly.
 
-- Do not expose private services.
-- Do not expose sensitive dashboards.
-- Do not publish passwords or API keys.
-- Do not share public URLs unnecessarily.
-- Stop the application when testing is complete.
-
-Press:
-
-CTRL + C
-
-to stop the application and its active tunnel.
+- ❌ Do not expose private or sensitive services.
+- ❌ Do not publish passwords or API keys.
+- ❌ Do not share generated URLs unnecessarily.
+- ❌ Do not expose personal information.
+- ✅ Stop the application when you are finished.
+- ✅ Use `CTRL + C` to stop the application.
+- ✅ Only share the link with people who have given consent.
 
 ---
 
-🔐 Privacy & Safety
+# 🔐 Privacy & Safety
 
-GeoTracker-Python is intended for authorized development, testing, and educational use.
+GeoTracker-Python is intended for **consent-based** and authorized use.
 
-Before collecting location or camera data:
+Always:
 
-- Obtain explicit user consent.
-- Clearly explain what information is collected.
-- Only collect information necessary for the intended purpose.
+- Get explicit consent before collecting location information.
+- Explain what information is being collected.
+- Collect only the information necessary for the intended purpose.
 - Never secretly track people.
-- Never capture photos without permission.
-- Never publish private user information.
-- Never commit passwords, API keys, access tokens, or secrets to GitHub.
+- Never secretly capture photos.
+- Never attempt to bypass browser permission controls.
+- Never publish private location information.
+- Never commit passwords, API keys, or other secrets to GitHub.
 
 ---
 
-🛡️ Security
+# 🛡️ Security
 
-Do not expose sensitive services through a public tunnel.
+Never publish sensitive information inside this repository.
 
-Never commit or publish:
+Do not commit:
 
 - API keys
 - Passwords
@@ -286,147 +305,140 @@ Never commit or publish:
 - Personal information
 - Cloudflare credentials
 - Private configuration files
+- Session secrets
 
-Keep sensitive information outside the repository.
+Use `.gitignore` to prevent sensitive files from being committed.
 
 ---
 
-🛠️ Troubleshooting
+# 🔧 Troubleshooting
 
-Python is not installed
+## Check Python
 
-Check:
-
+```bash
 python --version
+```
 
-Or:
+or:
 
+```bash
 python3 --version
+```
 
----
+## Check Git
 
-Git is not installed
-
-Check:
-
+```bash
 git --version
+```
 
----
+## Check Cloudflared
 
-Cloudflared is not found
-
-Check:
-
+```bash
 cloudflared --version
+```
 
-Make sure "cloudflared" is installed and available in the system PATH.
+## Check Project Files
 
----
-
-"requirements.txt" not found
-
-Check the project files:
-
+```bash
 ls
+```
 
-If "requirements.txt" does not exist, do not run:
+If the application does not start, verify that:
 
-pip install -r requirements.txt
-
-Use the dependencies required by the current project implementation.
-
----
-
-Public URL is not generated
-
-Check:
-
-1. Internet connection
-2. "cloudflared" installation
-3. "cloudflared --version"
-4. Terminal error messages
-5. Local dashboard startup
-
-The local application must be running before a public tunnel can be created.
+- Python 3 is installed.
+- Dependencies are installed.
+- `GPS.py` exists.
+- `requirements.txt` is available when required.
+- `cloudflared` is installed if public tunnel functionality is being used.
+- Your browser allows the requested permissions.
+- Your internet connection is working.
 
 ---
 
-Local Dashboard Works but Public Link Does Not
+# 📁 Project Structure
 
-The Python application may be running correctly while the Cloudflare Tunnel component is unavailable.
-
-Check the terminal output for the specific "cloudflared" error.
-
----
-
-📂 Project Structure
-
+```text
 GeoTracker-Python/
-│
 ├── GPS.py
 ├── README.md
 ├── .gitignore
 └── requirements.txt
-
-The exact structure may change as the project is updated.
+```
 
 ---
 
-🚀 Development
+# 💻 Development
 
-Contributions and improvements are welcome.
+Clone the repository:
+
+```bash
+git clone https://github.com/negi748/GeoTracker-Python.git
+```
+
+Create a development environment if desired:
+
+```bash
+python -m venv venv
+```
+
+Activate it on Linux/Termux:
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application:
+
+```bash
+python GPS.py
+```
+
+---
+
+# 🤝 Contributing
+
+Contributions, improvements, bug fixes, and educational suggestions are welcome.
 
 Before submitting changes:
 
-1. Test the application locally.
-2. Keep secrets out of the repository.
-3. Update the README when functionality changes.
-4. Respect user privacy and consent.
-5. Do not submit private or sensitive data.
+1. Test your changes locally.
+2. Keep the project privacy-focused.
+3. Do not add unauthorized tracking functionality.
+4. Do not commit secrets or sensitive information.
+5. Clearly describe your changes.
 
 ---
 
-📜 License
+# 📄 License
 
-MIT License
+This project is licensed under the MIT License.
 
-Copyright (c) 2026 negi748
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files, to deal in the Software
-without limitation the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+Copyright © 2026 **negi748**
 
 ---
 
-👤 Author
+# 👨‍💻 Author
 
-negi748
+**negi748**
 
-GitHub Profile:
-
+GitHub:  
 https://github.com/negi748
 
-Project:
-
+Project:  
 https://github.com/negi748/GeoTracker-Python
 
 ---
 
-⚠️ Disclaimer
+# ⚠️ Disclaimer
 
-GeoTracker-Python is provided for authorized development, testing, and educational purposes.
+GeoTracker-Python is provided for **authorized development, testing, research, and educational purposes**.
 
-Use this software responsibly and obtain appropriate permission and informed consent before collecting personal information such as location or camera data.
+Use this software only when you have appropriate permission and informed consent from the people whose information may be processed.
+
+The developer is not responsible for misuse of this software or for unlawful tracking, surveillance, privacy violations, or unauthorized data collection.
