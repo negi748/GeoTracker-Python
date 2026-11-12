@@ -116,22 +116,17 @@ Copy the displayed PUBLIC SHARE LINK and open it in your browser.
 
 🔄 How It Works
 
-        Run GPS.py
-            │
-            ▼
-     Python Web Server
-            │
-            ▼
-      Local Dashboard
-            │
-            ▼
-    Cloudflare Tunnel
-            │
-            ▼
- Temporary HTTPS URL
-            │
-            ▼
-    PUBLIC SHARE LINK
+Run "GPS.py"
+↓
+Python Web Server
+↓
+Local Dashboard
+↓
+Cloudflare Tunnel
+↓
+Temporary HTTPS URL
+↓
+PUBLIC SHARE LINK
 
 The application starts the local server and then uses Cloudflare Tunnel to provide temporary public access when the tunnel component is available.
 
@@ -399,9 +394,9 @@ Copyright (c) 2026 negi748
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files, to deal in the Software
-without restriction, including without limitation the rights to use, copy,
-modify, merge, publish, distribute, sublicense, and/or sell copies of the
-Software, subject to the following conditions:
+without limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, subject to the following
+conditions:
 
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
